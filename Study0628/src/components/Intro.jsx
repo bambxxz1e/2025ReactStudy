@@ -18,13 +18,11 @@ function Intro(){
 
 	return(
 		<ul>
-			{todos.map((todo) => {
-				return(
-					<li key={todo.id}>
+			{todos.map((todo) => (
+				<li key={todo.id}>
 					{todo.title} - {todo.completed ? "✅" : "❌"}
 				</li>
-				);
-			})}
+			))}
 		</ul>
 	)
 }
