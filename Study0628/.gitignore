@@ -23,16 +23,14 @@ dist-ssr
 *.sln
 *.sw?
 
-# 모든 파일 무시
-*
-
 # 예외
-!.gitignore
+public
+src/assets
 
-!package.json
-!package-lock.json
-!vite.config.js
+App.css
+index.css
+main.jsx
 
-!src/App.jsx
-
-!src/components/
+eslint.config.js
+index.html
+README.md

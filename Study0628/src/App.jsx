@@ -15,13 +15,17 @@ function App() {
         {/* <Intro /> */}
 
         <Post />
+
+        <Toggle />
+
+        <Clock />
         
-        <div style={{width: "400px", paddingTop: "50px"}}>
+        {/* <div style={{width: "400px", paddingTop: "50px"}}>
           <button onClick={() => setClick(!isClick)}>불러오기</button>
           {isClick ? <PostList /> : null}
         </div>
 
-        <Timer />
+        <Timer /> */}
       </div>
     </>
   )
