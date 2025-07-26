@@ -9,6 +9,11 @@ export default function TodoInput(){
 		setText("") // 5. 입력창 바꾸기
 	}
 
+	const deleteTodo = (targetText) => { // 문자열 배열이기 때문에 매개변수가 문자열임 (만약 id가 있다면 id로)
+		setTodos(todos.filter(todo => todo !== targetText))
+		// targeText가 아닌 todo만을 모아서 새 배열을 만들고 다시 저장
+	}
+
 	return(
 		<div>
 			<input
@@ -20,7 +25,10 @@ export default function TodoInput(){
 
 			<ul>
 				{todos.map((todo, index) => ( // 8. 목록 출력
-					<li key={index}>{todo}</li>
+					<li key={index}>
+						{todo}
+						<button onClick={() => deleteTodo(todo)}>삭제</button>
+					</li>
 				))}
 			</ul>
 		</div>
