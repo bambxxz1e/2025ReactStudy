@@ -14,18 +14,11 @@ function App() {
       <div style={{display: "flex", gap: "60px", margin: "40px"}}>
         {/* <Intro /> */}
 
-        <Post />
+        <PostList />
 
         <Toggle />
 
         <Clock />
-        
-        {/* <div style={{width: "400px", paddingTop: "50px"}}>
-          <button onClick={() => setClick(!isClick)}>불러오기</button>
-          {isClick ? <PostList /> : null}
-        </div>
-
-        <Timer /> */}
       </div>
     </>
   )
