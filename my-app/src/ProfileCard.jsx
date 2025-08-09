@@ -1,4 +1,4 @@
-function ProfileCard({name="익명", hobby="잠자기", fav_food="쌀밥"}){
+function ProfileCard({name="익명", hobby="잠자기", fav_food="밥"}){
 	return(
 		<div>
 			<h2>{name}</h2>
