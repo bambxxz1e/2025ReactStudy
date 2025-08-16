@@ -27,8 +27,10 @@ dist-ssr
 public
 src/assets
 
+App.jsx
 App.css
 index.css
+main.jsx
 
 eslint.config.js
 index.html
