@@ -10,11 +10,7 @@ function ProfileCard({name="익명", hobby="잠자기", fav_food="밥"}){
 
 // App.jsx 입력 값
 
-	// <h1>안녕, {name}!</h1>
-	// <p className="desc">리액트 첫 수업입니다!!</p>
-	// <img src="/vite.svg" />
-
-	// {/* <h1>리액트 스터디 출석부</h1>
+	// <h1>리액트 스터디 출석부</h1>
 	// <Hello name="리쿠" emoji="🐿️" color="red"/>
 	// <Hello name="토쿠" emoji="⭐" color="skyblue"/>
 	// <Hello name="사쿠" emoji="🥐" color="lightpink"/>
