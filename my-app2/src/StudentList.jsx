@@ -7,6 +7,9 @@ export default function StudentList(){
 		{id: "s3", name: "마에다", present: true}
 	])
 
+	const [search, setSearch] = useState("");
+	const filtered = students.filter((s) => s.name.includes(search));
+
 	const toggle = (id) => { // map() -> 새로운 배열을 만듦
 		setStudents((prev) => // 이전 학생 배열 가져와서 바꾸고 교체하겟음
 			prev.map((s) => (s.id === id ? {...s, present : !s.present} : s)))
@@ -16,6 +19,17 @@ export default function StudentList(){
 	return (
 		<div>
 			<h1>학생리스트</h1>
+
+			<input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="검색" style={{margin: 10}}/>
+
+			<ul style={{paddingLeft: 16, marginBottom: 8}}>
+				{filtered.map((s) => (
+					<li key={s.id} style={{marginBottom: 8}}>
+						{s.name} - {s.present ? "출석" : "결석"}
+					</li>
+				))}
+			</ul>
+
 			<ul style={{paddingLeft: 16}}>
 				{students.map((s) => (
 					<li key={s.id} style={{marginBottom: 8}}>
